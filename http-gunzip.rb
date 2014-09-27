@@ -16,7 +16,7 @@ while i = dat.index(/^content-encoding: gzip\r?$/i, i0)
 
   loop do
     m = dat.match(/^([0123456789abcdef]+)?\r?$/, j)
-    l = m[1].to_i(16)
+    l = m[1].to_i(16) rescue 0
 
     if l == 0
       i0 = m.offset(0)[1] + 1
