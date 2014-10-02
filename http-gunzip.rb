@@ -1,3 +1,6 @@
+# wireshark-http-gunzip.rb
+# 0.1.1
+#
 # Usage:
 # ruby http-gunzip.rb < tcp-stream-file
 require 'zlib'
